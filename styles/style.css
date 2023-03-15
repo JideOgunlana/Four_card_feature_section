@@ -1,0 +1,62 @@
+/*
+    Base styles
+*/
+
+:root {
+    --primary-red: hsl(0, 78%, 62%);
+    --primary-cyan: hsl(180, 62%, 55%);
+    --primary-orange: hsl(34, 97%, 64%);
+    --primary-blue: hsl(212, 86%, 64%);
+    --primary-white: hsl(0, 50%, 100%);
+    --neutral-very-dark-blue: hsl(234, 12%, 34%);
+    --neutral-grayish-blue: hsl(229, 6%, 66%);
+    --neutral-very-light-gray: hsl(0, 0%, 98%);
+    --body-font-size: 15px;
+}
+
+body {
+    font-size: var(--body-font-size);
+    margin: 0;
+    background-color: var(--neutral-grayish-blue);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(150px, auto);
+    row-gap: 20px;
+}
+
+.card {
+    padding: 20px;
+    border: 1px solid;
+    border-top-width: 3px;
+    border-radius: 5px;
+    z-index: 400px;
+    background-color: var(--primary-white);
+    box-shadow: 10px 10px 100px var(--neutral-very-light-gray);
+}
+
+.supervisor {
+    border-top-color: var(--primary-cyan);
+}
+
+.team-builder {
+    border-top-color: var(--primary-red);
+}
+
+.karma {
+    border-top-color: var(--primary-orange);
+}
+
+.calculator {
+    border-top-color: var(--primary-blue);
+}
