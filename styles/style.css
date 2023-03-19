@@ -17,7 +17,9 @@
 body {
     font-size: var(--body-font-size);
     margin: 0;
-    background-color: var(--neutral-grayish-blue);
+    background-color: var(--primary-white);
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box
 }
 
 .container {
@@ -25,24 +27,56 @@ body {
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: minmax(250px, auto);
+    grid-auto-rows: minmax(300px, auto);
+}
+
+header {
+    align-self: center;
 }
 
 .main-content {
     display: grid;
     grid-template-columns: 100%;
-    grid-auto-rows: minmax(150px, auto);
-    row-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
+    gap: 20px;
+}
+
+.normal-heading, .bold-heading {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+div.normal-heading {
+    font-weight: 200;
+}
+
+div.bold-heading, h2 {
+    font-weight: 700;
+}
+
+
+header .pag {
+    text-align: center;
+    font-size: 1rem;
+}
+
+main h2 {
+    font-size: 1.2rem;
+    margin: 0;
+}
+.pag {
+    color: var(--neutral-grayish-blue);
+    font-size: 0.8rem;
 }
 
 .card {
     padding: 20px;
-    border: 1px solid;
+    border-top: 1px solid;
     border-top-width: 3px;
     border-radius: 5px;
     z-index: 400px;
     background-color: var(--primary-white);
-    box-shadow: 10px 10px 100px var(--neutral-very-light-gray);
+    box-shadow: 8px 8px 8px var(--neutral-very-light-gray), -8px 8px 8px var(--neutral-very-light-gray);
 }
 
 .supervisor {
@@ -59,4 +93,73 @@ body {
 
 .calculator {
     border-top-color: var(--primary-blue);
+}
+
+.icon {
+    width: 35%;
+    aspect-ratio: 1 / 1;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 65%;
+}
+
+.supervisor .icon {
+    background-image: url("../images/icon-supervisor.svg");
+}
+
+.team-builder .icon {
+    background-image: url("../images/icon-team-builder.svg");
+}
+
+.karma .icon {
+    background-image: url("../images/icon-karma.svg");
+}
+
+.calculator .icon {
+    background-image: url("../images/icon-calculator.svg");
+}
+
+@media screen and (min-width: 768px) {
+
+    header {
+        width: 50%;
+        justify-self: center;
+        align-self: flex-end;
+    }
+
+    header .pag {
+        font-size: 1.2rem;
+    }
+
+    .normal-heading, .bold-heading {
+        font-size: 2rem;
+    }
+
+    .main-content {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .supervisor {
+        grid-row: span 4;
+        align-self: center;
+    }
+
+    .calculator {
+
+        grid-row: span 4;
+        align-self: center;
+    }
+
+    .karma {
+
+        grid-column: 2 / 3;
+        grid-row: 3 / 5;
+        align-self: flex-start;
+
+    }
+
+    .team-builder {
+        grid-row: span 2;
+        align-self: flex-end;
+    }
 }
