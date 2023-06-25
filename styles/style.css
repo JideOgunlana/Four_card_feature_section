@@ -66,17 +66,18 @@ main h2 {
 }
 .pag {
     color: var(--neutral-grayish-blue);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .card {
     padding: 20px;
     border-top: 1px solid;
     border-top-width: 3px;
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 400px;
     background-color: var(--primary-white);
-    box-shadow: 8px 8px 8px var(--neutral-very-light-gray), -8px 8px 8px var(--neutral-very-light-gray);
+    box-shadow: 8px 8px  9px -14px var(--neutral-very-dark-blue), -8px 8px 9px -14px var(--neutral-very-dark-blue),
+                0px 8px 9px -14px var(--neutral-very-dark-blue);
 }
 
 .supervisor {
@@ -139,19 +140,21 @@ main h2 {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .main-content .pag {
+        font-size: 1.05rem;
+    }
+
     .supervisor {
         grid-row: span 4;
         align-self: center;
     }
 
     .calculator {
-
         grid-row: span 4;
         align-self: center;
     }
 
     .karma {
-
         grid-column: 2 / 3;
         grid-row: 3 / 5;
         align-self: flex-start;
