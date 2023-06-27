@@ -42,7 +42,7 @@ users should be able to:
 The challenge allowed me to build layout skills, starting from a mobile-first approach.
 
 ### Continued development
-- CSS gradients
+- Improvement in complex Layouts
 
 
 ## Author
