@@ -38,7 +38,7 @@ header {
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: minmax(100px, auto);
-    gap: 20px;
+    gap: 40px;
 }
 
 .normal-heading, .bold-heading {
@@ -78,12 +78,11 @@ h2
 
 .card {
     padding: 20px;
-    border-top: 1px solid;
-    border-top-width: 3px;
-    border-radius: 10px;
-    z-index: 400px;
+    border-top: solid;
+    border-top-width: 5px;
+    border-radius: 5px;
     background-color: var(--primary-white);
-    box-shadow: 8px 8px  9px -14px var(--neutral-very-dark-blue), -8px 8px 9px -14px var(--neutral-very-dark-blue),
+    box-shadow: 8px 8px  13px -10px var(--neutral-very-dark-blue), -8px 8px 9px -14px var(--neutral-very-dark-blue),
                 0px 8px 9px -14px var(--neutral-very-dark-blue);
 }
 
@@ -127,7 +126,7 @@ h2
     background-image: url("../images/icon-calculator.svg");
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1060px) {
 
     .container {
         row-gap: 70px;
