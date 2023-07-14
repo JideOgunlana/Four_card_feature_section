@@ -9,6 +9,9 @@ Thanks for checking out this front-end coding challenge.
 [Frontend Mentor](https://www.frontendmentor.io) challenges help to improve coding skills by building realistic projects.
 
 
+`You can view the result at` [https://jideogunlana.github.io/Four_card_feature_section/](https://jideogunlana.github.io/Four_card_feature_section/)
+
+
 ## The challenge
 
 **To do this challenge, a basic understanding of HTML and CSS is needed.**
